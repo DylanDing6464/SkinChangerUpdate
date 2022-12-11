@@ -8,8 +8,6 @@ import zipfile
 import io
 
 import os
-import glob
-import shutil
 
 
 def getFileURL(web_url):
@@ -81,6 +79,12 @@ def downloadAndExtract(file_url, dst_path):
 
 
 def updataSkinChanger(dst_path, LOLVersion):
+    """_summary_
+
+    Args:
+        dst_path (_type_): _description_
+        LOLVersion (_type_): _description_
+    """
 
     # assemble the file path for the exe file (skinchanger file_uunextracted)
     exeFileName = "LOLPRO " + LOLVersion + ".exe"
